@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img src="spotify_logo.png" alt=""></div>
+                <ul>
+                    <li alt="home"><i class="fa-solid fa-house"></i> Home </li>
+                    <li alt="home"><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>Your Library
+
+                    </h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-music"></i>
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Signup</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>
+                    Spotify Playlist
+                </h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d" alt="">
+                        <h2>Sajni</h2>
+                        <p>Ram Sampath,Arijit Singh,Prashant Pandey</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d" alt="">
+                        <h2>Sajni</h2>
+                        <p>Ram Sampath,Arijit Singh,Prashant Pandey</p>
+                    </div>
+
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="abovebar">
+
+                        </div>
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <i class="fa-solid fa-backward-step" id="previous"></i>
+                            <span id="play"><i class="fa-regular fa-circle-play"></i></span>
+                            <i class="fa-solid fa-forward-step" id="next"></i>
+                        </div>
+
+                        <div class="songtime">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
