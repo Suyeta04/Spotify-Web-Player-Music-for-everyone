@@ -15,18 +15,21 @@
 
     <div class="container flex bg-black">
         <div class="left ">
+            <div class="close">
+                <i class="fa-solid fa-xmark" width="30"></i>
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img src="spotify_logo.png" alt=""></div>
+                <div class="logo"><img src="img/spotify_logo.png" alt=""></div>
                 <ul>
                     <li alt="home"><i class="fa-solid fa-house"></i> Home </li>
-                    <li alt="home"><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                    <li alt="search"><i class="fa-solid fa-magnifying-glass"></i> Search</li>
 
                 </ul>
             </div>
 
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading">
-                    <img class="invert" src="playlist.svg" alt="">
+                    <img class="invert" src="img/playlist.svg" alt="">
                     <h2>Your Library
 
                     </h2>
@@ -64,8 +67,11 @@
         <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
+                    <div class="hamburgercontainer">
+                    <img class="invert" src="img/hamburger.svg" width="18" id="hamburger" alt="">
                     <i class="fa-solid fa-chevron-left"></i>
                     <i class="fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
                 <div class="buttons">
                     <button class="signupbtn">Signup</button>
@@ -103,19 +109,30 @@
                         </div>
                         <div class="abovebar">
 
-                        </div>
+                        
                         <div class="songinfo">
 
                         </div>
                         <div class="songbuttons">
-                            <i class="fa-solid fa-backward-step" id="previous"></i>
-                            <span id="play"><i class="fa-regular fa-circle-play"></i></span>
-                            <i class="fa-solid fa-forward-step" id="next"></i>
+                            <i class="fa-solid fa-backward-step invert"  id="previous"></i>
+                            <span id="play"><i class="fa-regular fa-circle-play invert"></i></span>
+                            <i class="fa-solid fa-forward-step invert" id="next"></i>
                         </div>
+                        <div class="timevol">
 
                         <div class="songtime">
 
                         </div>
+                        <div class="volume">
+                            <img src="img/volume.svg" width="25" alt="Volume Icon">
+                            <div class="range">
+                                <label for="volume-control" class="sr-only">Volume Control</label>
+                                <input type="range" name="volume" id="volume-control" title="Adjust volume" aria-label="Volume Control">
+                            </div>
+                        </div>
+                        
+                       </div>
+                    </div>
                     </div>
                 </div>
             </div>
